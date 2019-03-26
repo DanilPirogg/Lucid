@@ -1,0 +1,116 @@
+
+.top {
+  background: url("../images/bgheader.png") no-repeat center;
+  background-size: cover;
+
+    nav{
+      ul{
+        li{
+          position: relative;
+          padding-left: 0;
+          a{
+            padding-left: 0;
+            font-family: 'Source Sans Pro', sans-serif;color: white;
+          }
+          &:after{
+            width: 42px;
+            height: 2px;
+
+            background-color: #008ed6;
+            display: block;
+            content: "";
+            opacity: 0;
+            transition: 0.3s;
+            position: relative;
+            z-index: 1;
+          }
+          &:before{
+            content: "";
+            background-color: #16151b;
+            height: 2px;
+            width: 2px;
+            position: absolute;
+            bottom: 0;
+            left: 20px;
+            z-index: 2;
+            opacity: 0;
+          }
+          &:hover{
+            a{
+              background-color: transparent;
+            }
+            &:after{
+              opacity: 1;
+            }
+            &:before{
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+span.icon-bar {
+  background: white !important;
+}
+
+.navbar-nav li a {
+  text-shadow: none !important;
+}
+
+div.col-md-7.col-lg-7 {
+  padding-top: 35px;
+  padding-bottom: 50px;
+  h3 {
+    color: #008ed6;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding-bottom: 20px;
+  }
+  h1 {
+    color: white;
+    font-size: 38px;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 1px;
+    padding-bottom: 25px;
+  }
+  p {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #7f8081;
+    padding-bottom: 40px;
+  }
+}
+
+.row.buttons {
+  margin: auto;
+  a {
+    margin-right: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px 20px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid gray;
+  }
+  a:hover{
+    background-color: #008ed6;
+    transition: 1.5s;
+    border: 1px solid transparent;
+    border-radius: 2px;
+  }
+}
+.col-md-5.col-lg-5{
+
+
+img{
+width: 100%;
+  height: 100%;
+}
+}
+
+
+.nav li a:focus{
+  background-color: transparent;
+
+}
